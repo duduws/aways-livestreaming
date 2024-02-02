@@ -10,5 +10,5 @@ services:
     env_file:
       - .env
     volumes:
-      - ./fallback.sh:/usr/local/bin/fallback.sh
-    command: /bin/bash -c "nginx -g 'daemon off;' & /usr/local/bin/fallback.sh"
+      - ./loop_fallback.sh:/usr/local/bin/loop_fallback.sh
+    command: /bin/bash -c "nginx -g 'daemon off;' & /usr/local/bin/loop_fallback.sh"
