@@ -21,13 +21,13 @@ Esse projeto foi desenvolvido utilizando ideias de videos e codigos retirados de
 ## Como executar
 - Insira seus dados de streaming no arquivo `.env`
 - Defina um video fallback.mp4 no diretorio /usr/share/nginx/html/fallback.mp4
-- Vá ao seu canal da twitch e preencha `.env` com a Chave de transmissão e a ![URL de transmissão busque nesse endereço aqui](https://help.twitch.tv/s/twitch-ingest-recommendation?language=en_US)
+- Vá ao seu canal da twitch e preencha `.env` com a Chave de transmissão e a [URL de transmissão busque nesse endereço aqui](https://help.twitch.tv/s/twitch-ingest-recommendation?language=en_US)
 ```
 TWITCH_URL=rtmp://sao03.contribute.live-video.net/app
 TWITCH_STREAM_KEY=1234567890abcdefg
 ```
 
-Suba o container com a aplucação utilizando docker compose
+Suba o container com a aplicação utilizando docker compose
 ```
 docker-compose up --build
 ```
